@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="fr"> 
+
+<head>
+<title>Les Arts EnChantés - Contact</title>
+<meta name="description" content="Les Arts Enchantés" />
+<meta name="keywords" 
+content="" />
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-Language" content="fr" />
+<meta http-equiv="window-target" content="_blank_top" />
+
+<link rel="stylesheet" type="text/css" href="styles/principal2b.css" />
+<link rel="stylesheet" type="text/css" href="styles/liste2a.css" />
+<link rel="stylesheet" type="text/css" href="styles/courriel.css" />
+<link rel="stylesheet" type="text/css" href="styles/diapo.css" />
+
+<script type="text/javascript" src="js/diap-script.js"></script>
+<script type="text/javascript" src="js/verif_info.js"></script>
+
+</head>
+
+<body onload="diap.slider()">
+
+
+<div class="conteneur" id="conteneur">
+
+<div class="titre"><p>Les Arts EnChantés</p>
+
+<div id="menu" class="menu">
+<ul>
+  <li style="width:104px;">
+  <a href="accueil.html">ACCUEIL</a></li>
+  
+  <li style="width:104px;">
+  <a href="#">AGENDA</a>
+    <ul>
+	  <li><a href="avenir.html">A venir</a></li>
+      <li><a href="passes.html">Passés</a></li>
+    </ul>
+  </li>
+  
+    <li style="width:120px;">
+	<a href="#"> STAGES </a>
+    <ul>
+      <li><a href="stages.html">Prochains stages</a></li>
+      <li><a href="infos.html">Informations</br> pratiques</a></li>
+	  <li><a href="pedagogie.html" style="margin:15px 0 0 0;">La pédagogie</a></li>
+    </ul>
+  </li>
+
+   <li style="width:110px;">
+   <a href="#">SPECTACLES</a>
+    <ul>
+      <li><a href="creations.html">Les créations</a></li>
+      
+	  <li><a href="philosophie.html">La philosophie</a></li>
+    </ul>
+  </li>
+
+  <li style="width:190px;">
+  <a href="#">COURS DE MUSIQUE</a>
+    <ul>
+      <li><a href="#">Cours individuels</a></li>
+      <li><a href="#">La chorale enchantée</a></li>
+    </ul>
+  </li>
+
+  <li style="width:104px;">
+  <a href="#">CONTACTS</a></li>
+</ul>
+</div>
+
+</div>
+
+
+<div id="cadre1" class="cadre1">
+<img name="changePhoto" class="logo" src="images/logo.png" border=0 />
+
+<div id="wrapper">
+
+		<div id="slider">
+			<ul>
+				<li>
+				<img src="images/diapo/1.jpg" />
+				<img src="images/diapo/15.jpg" />
+				<img src="images/diapo/3.jpg" />
+				<img src="images/diapo/4.jpg" />
+                </li>
+				<li>
+				<img src="images/diapo/5.jpg" />
+				<img src="images/diapo/6.jpg" />
+				<img src="images/diapo/7.jpg" />
+				<img src="images/diapo/24.jpg" />				
+				</li>
+				<li>
+				<img src="images/diapo/17.jpg" />
+				<img src="images/diapo/18.jpg" />
+				<img src="images/diapo/10.jpg" />
+				<img src="images/diapo/11.jpg" />
+				</li>
+				<li>
+				<img src="images/diapo/13.jpg" />
+				<img src="images/diapo/14.jpg" />
+				<img src="images/diapo/2.jpg" />
+				<img src="images/diapo/16.jpg" />
+				</li>
+				<li>
+				<img src="images/diapo/25.jpg" />
+				<img src="images/diapo/26.jpg" />
+				<img src="images/diapo/27.jpg" />
+				<img src="images/diapo/28.jpg" />
+				</li>
+
+			</ul>
+		</div>
+
+		<ul id="pagination" class="pagination">
+		<li onclick="slideshow.pos(0)"></li>
+		<li onclick="slideshow.pos(1)"></li>
+		<li onclick="slideshow.pos(2)"></li>
+		</ul>
+</div>
+
+<script type="text/javascript">
+var slideshow=new diap.slider.slide('slideshow',{
+	id:'slider',
+	auto:4,
+	resume:false,
+	vertical:false,
+	navid:'pagination',
+	activeclass:'current',
+	position:0,
+	rewind:false,
+	elastic:false,
+});
+</script>
+
+</div>
+
+<div class="adresse">
+<p>
+<span>
+Arts Enchantés ASBL
+</span>
+<br /> 
+Avenue Jean Van Horenbeeck 260, 
+1160 Bruxelles (Auderghem)
+<br />
+Tel : 0493/10.07.11
+<br />
+Email : artsenchantes@gmail.com
+</p>
+</div>
+
+<div class="titrepage"><p>Formulaire de contact</p>
+</div>
+
+
+<div class="cadre2">
+
+
+<table class="tab1form" align="center" cellpadding=0  cellspacing=0 border=0>
+<form id="courriel" name="courriel" method="post" action="courriel.php" onsubmit="return verif_courriel()">
+
+<tr>
+<td class="cell0" align="center">
+<p>Entrez votre adresse électronique ou votre numéro de téléphone</p></td>
+</tr><tr>
+<td class="cell2" align="center">
+<input type="text" id="mail" name="mail" size=40 />
+</td>
+</tr>
+<tr>
+<td class="cell0" align="center">
+<p>Votre message concerne :</p></td>
+</tr><tr>
+<td class="cell2" align="center">
+<select name="select">
+<option value="asbl">à propos de l'asbl</option> 
+<option value="stages" selected>à propos des stages</option>
+<option value="spectacles">à propos des spectacles</option>
+<option value="cours de musique">à propos des cours de musique</option>
+<option value="autre">autre</option>
+</select>
+
+</td>
+</tr>
+
+<tr>
+<td class="cell0" align="center">
+<p>Entrez votre message </p></td>
+</tr><tr>
+<td class="cell4" align="center">
+<textarea cols=50 rows=10 id="message" name="message"></textarea></td>
+</tr>
+
+<tr><td class="cell5" align="center">
+<input type="submit" value="  Envoyer  " class="boutonform" /></td></tr>
+</form>
+</table>
+
+
+</div>
+
+
+</div>
+
+<div class="instru">
+<img src="images/instruments.png" />
+</div>
+
+
+<div class="footer">
+
+<div class="cadre_fo">
+
+
+<div class="texte_fo">
+
+Arts Enchantés ASBL © Tous droits réservés.
+<br />
+Avenue Jean Van Horenbeeck 260 
+<br />
+1160 Bruxelles (Auderghem)
+<br />
+Tel: 0493/10.07.11
+<br />
+<a href="#">
+artsenchantes@gmail.com
+</a>
+</div>
+
+<!--<div class="texte_fo2">
+Restez informé par courriel :
+<br />
+<form  id="lettreinfo" name="lettreinfo" method="post" action="info.php" onsubmit="return verif_info()">
+<input type="text" id="mailinfo" name="mailinfo" class="mail" size="35" />
+<br />
+<input type="submit" value="Envoyer" class="bouton" name="envoyer" />
+</form>
+</div>-->
+
+</div>
+
+
+</div>
+
+
+
+</body>
+</html>

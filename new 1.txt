@@ -1,0 +1,1 @@
+onclick="javascript:document.lettre_info.submit(); return verif_info()"

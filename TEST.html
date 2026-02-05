@@ -1,0 +1,42 @@
+<html>
+ <head>
+ 
+  <title>IE10/11 Media Query Test</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style>
+    @media all and (-ms-high-contrast:none)
+     {
+
+	 position: right;
+left:50%;
+margin:4px 0 0 -4px;
+border-style:solid;
+border-width:19px;
+border-color:#007000;
+padding:3px;
+	 
+	     .foo {
+position:left;
+left:50%;
+margin:40px 0 0 -445px;
+border-style:solid;
+border-width:0px;
+border-color:#008000;
+width:auto;
+height:auto;
+padding:0px;
+} /* IE10 */
+    
+
+     }
+  </style>
+ </head>
+ 
+<div class="foo">
+
+<img name="scene" src="images/13.png" border=0 />
+
+</div>
+ 
+</html>
