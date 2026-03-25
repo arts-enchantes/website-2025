@@ -120,7 +120,7 @@ border-color:#ffffff;
 
 
 .texte_fo{
-float:left;
+margin:auto;
 text-align:center;
 font-family:Calibri;
 font-size:13pt;
